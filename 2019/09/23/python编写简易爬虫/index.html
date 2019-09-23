@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Xiaoyi&#39;s blog</title>
+  <title>python编写简易爬虫 | Xiaoyi&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="什么是爬虫？网络爬虫（web crawler），其实就是一种脚本，能够按照一定的规则自动的抓取万维网上的信息。 爬虫的思路先输入一个网址，浏览器拿到网址后通过域名解析出IP后（http服务）发送给服务器一个请求；服务器会根据请求做相应处理后在返回给浏览器（响应）；浏览器收到响应后会对收到的内容解析、渲染，在展示给用户。而爬虫就是用程序模拟浏览器发送http请求，通过url进行一系列的信息数据等资源">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2019/09/06/hello-world/index.html">
+<meta property="og:title" content="python编写简易爬虫">
+<meta property="og:url" content="http://yoursite.com/2019/09/23/python编写简易爬虫/index.html">
 <meta property="og:site_name" content="Xiaoyi&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="什么是爬虫？网络爬虫（web crawler），其实就是一种脚本，能够按照一定的规则自动的抓取万维网上的信息。 爬虫的思路先输入一个网址，浏览器拿到网址后通过域名解析出IP后（http服务）发送给服务器一个请求；服务器会根据请求做相应处理后在返回给浏览器（响应）；浏览器收到响应后会对收到的内容解析、渲染，在展示给用户。而爬虫就是用程序模拟浏览器发送http请求，通过url进行一系列的信息数据等资源">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-06T06:49:49.869Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/images%221.jpg%22">
+<meta property="og:image" content="http://yoursite.com/2019/09/23/images%222.jpg%22">
+<meta property="og:updated_time" content="2019-09-23T09:46:09.661Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="python编写简易爬虫">
+<meta name="twitter:description" content="什么是爬虫？网络爬虫（web crawler），其实就是一种脚本，能够按照一定的规则自动的抓取万维网上的信息。 爬虫的思路先输入一个网址，浏览器拿到网址后通过域名解析出IP后（http服务）发送给服务器一个请求；服务器会根据请求做相应处理后在返回给浏览器（响应）；浏览器收到响应后会对收到的内容解析、渲染，在展示给用户。而爬虫就是用程序模拟浏览器发送http请求，通过url进行一系列的信息数据等资源">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/23/images%221.jpg%22">
   
     <link rel="alternative" href="/atom.xml" title="Xiaoyi&#39;s blog" type="application/atom+xml">
   
@@ -154,39 +157,103 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-python编写简易爬虫" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      python编写简易爬虫
     </h1>
   
 
         
-        <a href="/2019/09/06/hello-world/" class="archive-article-date">
-  	<time datetime="2019-09-06T06:49:49.869Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
+        <a href="/2019/09/23/python编写简易爬虫/" class="archive-article-date">
+  	<time datetime="2019-09-23T08:05:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-23</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h2 id="什么是爬虫？"><a href="#什么是爬虫？" class="headerlink" title="什么是爬虫？"></a>什么是爬虫？</h2><p>网络爬虫（web crawler），其实就是一种脚本，能够按照一定的规则自动的抓取万维网上的信息。</p>
+<h2 id="爬虫的思路"><a href="#爬虫的思路" class="headerlink" title="爬虫的思路"></a>爬虫的思路</h2><p>先输入一个网址，浏览器拿到网址后通过域名解析出IP后（http服务）发送给服务器一个请求；服务器会根据请求做相应处理后在返回给浏览器（响应）；浏览器收到响应后会对收到的内容解析、渲染，在展示给用户。而爬虫就是用程序模拟浏览器发送http请求，通过url进行一系列的信息数据等资源的抓取。</p>
+<h2 id="爬虫流程"><a href="#爬虫流程" class="headerlink" title="爬虫流程"></a>爬虫流程</h2><blockquote>
+<p>目标数据  </p>
+</blockquote>
+<p>-网站<br>-页面  </p>
+<blockquote>
+<p>分析数据加载流程</p>
+</blockquote>
+<p>-分析目标数据所对应的url  </p>
+<blockquote>
+<p>下载数据  </p>
+</blockquote>
+<blockquote>
+<p>清洗处理数据  </p>
+</blockquote>
+<blockquote>
+<p>数据持久化  </p>
+</blockquote>
+<p> 清楚原理后开始爬虫！这次爬虫的目标是<a href="http://www.xbiqugew.com/" target="_blank" rel="noopener">笔趣阁</a>上的辰东的《圣墟》  </p>
+<h2 id="开始爬虫"><a href="#开始爬虫" class="headerlink" title="开始爬虫"></a>开始爬虫</h2><blockquote>
+<p>首先导入爬虫所需要的库  </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">import re</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>requests:爬虫需要请求http模块，可以方便进行数据爬取<br>re:re是正则表达式的库，可以更精确指定抓取数据的位置</p>
+<blockquote>
+<p>下载一个页面  </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url = &apos;http://www.xbiqugew.com/book/18725/&apos;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>模拟浏览器发送http请求  </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">response = requests.get(url)</span><br><span class="line">response.encoding =&apos;gbk&apos;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>此处html的字符集我试了很多个种字符集都是乱码，最后找到一个诀窍，直接到html代码里找到头部(head)，一般前面几行就会写出这个html的字符集。这个html的字符集为gbk  </p>
+<p><img src="../images%221.jpg%22" alt="html中查看字符集"> </p>
+<blockquote>
+<p>网页源码</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">html = response.text</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<blockquote>
+<p>获取小说标题</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title = re.findall(r&apos;&lt;meta property=&quot;og:title&quot; content=&quot;(.*?)&quot;&gt;&apos;,html)</span><br></pre></td></tr></table></figure>
+
+<p>这里的小说标题就是用爬虫抓取出来的数据了。  </p>
+<p>  从html网页源码中找到需要抓取内容周围具有唯一性的代码段，将需要抓取的内容删除，使用(.*?)来代替，这里的括号里点星问就是需要抓取的内容。  </p>
+<blockquote>
+<p>获取每一章节的信息（章节，url）  </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dl = re.findall(r&apos;&lt;dt&gt;《圣墟》正文&lt;/dt&gt;.*?&lt;/dl&gt;&apos;,html,re.S)[0]</span><br><span class="line">chapter_info_list = re.findall(r&apos;&lt;dd&gt;&lt;a href=&quot;(.*?)&quot;&gt;(.*?)&lt;/a&gt;&lt;/dd&gt;&apos;,dl)</span><br></pre></td></tr></table></figure>
+
+<p>和上面获取小说标题信息一样，知识抓取内容更多更杂乱一点，不过都是通过re.findall()和(.*?)来抓取内容。  </p>
+<blockquote>
+<p>循环每一个章节，分别去下载  </p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">for chapter_info in chapter_info_list:</span><br><span class="line">    chapter_url,chapter_title = chapter_info</span><br><span class="line">    chapter_url = &quot;http://www.xbiqugew.com&quot; + chapter_url</span><br><span class="line">    </span><br><span class="line">    chapter_response = requests.get(chapter_url)</span><br><span class="line">    chapter_response.encoding=&apos;gbk&apos;</span><br><span class="line">    chapter_html=chapter_response.text</span><br></pre></td></tr></table></figure>
+
+<p>通过for循环下载每一章小说的内容，这里的代码也只是重复之前的过程：获取网页、抓取网页中需要的内容，这里再用一个循环循环每一章节，将每章小说抓取下来。</p>
+<blockquote>
+<p>清洗数据  </p>
+</blockquote>
+<p>这里抓取出来的小说还有很多杂乱的、我们不想要的数据在里面，比如：很多空格，html中的空格代码 &amp;nbsp 和换行标签 &lt; /br&gt;等等。可以使用replace置换。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chapter_content = chapter_content.replace(&apos; &apos;,&apos;&apos;)</span><br><span class="line">chapter_content = chapter_content.replace(&apos;&amp;nbsp&apos;,&apos;&apos;)</span><br><span class="line">chapter_content = chapter_content.replace(&apos;&lt;br/&gt;&apos;,&apos;&apos;)</span><br></pre></td></tr></table></figure>
+
+<p>这里我也出了一个问题：我在之前的chpter_content是list格式，但是list无法使用replace，最开始用join还是报错，最后直接使用str()转换成字符串。  </p>
+<blockquote>
+<p>数据持久化储存</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fp = open(&apos;%s.txt&apos;%title,&apos;w&apos;,encoding=&apos;utf-8&apos;</span><br><span class="line">fp.write(chapter_title)</span><br><span class="line">fp.write(chapter_content)</span><br><span class="line">fp.write(&apos;\n&apos;)</span><br></pre></td></tr></table></figure>
+
+<p>将抓取的小说存储到txt文档中</p>
+<p>最后给大家看看我抓的小说  </p>
+<p><img src="../images%222.jpg%22" alt="乱七八槽的小说"><br>当然我这个也还需要改进。源码今天看已经找不到了，后面再补上。</p>
 
       
 
@@ -266,7 +333,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/06/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/09/23/python编写简易爬虫/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,15 +347,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/09/23/python编写简易爬虫/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          python编写简易爬虫
-        
-      </div>
-    </a>
   
+    <a href="/2019/09/06/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -317,8 +380,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2019/09/06/hello-world/", 
-    sourceId: "hello-world",
+    url: "http://yoursite.com/2019/09/23/python编写简易爬虫/", 
+    sourceId: "python编写简易爬虫",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
