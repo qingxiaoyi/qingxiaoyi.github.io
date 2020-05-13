@@ -1,180 +1,159 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <meta name="keywords" content="hexo, autumn">
-    <title>
-        Xiaoyi&#39;s blog
-    </title>
-    <!-- favicon -->
-    
-    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico">
-     <link rel="stylesheet" href="/css/style.css">
+  <meta charset="utf-8">
+  
+  <title>Archives: 2019 | Xiaoyi&#39;s blog</title>
+  <meta name="author" content="Xiaoyi Qing">
 
-    <!-- highlight -->
-    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css">
-    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
-    <script>
-        hljs.initHighlightingOnLoad()
-    </script>
-    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+  
 
-    <script>
-        infiniteScroll()
+  
 
-        window.addEventListener('DOMContentLoaded', function () {
-            const [
-                mainTitle,
-                mobileMenu,
-                mobileMainTitle,
-                mobileMenuBtn,
-                ipadMenuBtn,
-                aside,
-                closeBtn,
-            ] = getEle(
-                '#main-title',
-                '.mobile-menu',
-                '.mobile-menu h3',
-                '.mobile-menu button',
-                '.ipad-menu',
-                'aside',
-                'aside .close',
-            )
-            const io = new IntersectionObserver(entries => {
-                if (entries[0].intersectionRatio <= 0) {
-                    mobileMainTitle.classList.remove('invisibile')
-                } else {
-                    mobileMainTitle.classList.add('invisibile')
-                }
-            })
-            io.observe(mainTitle)
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-            clickToggleAside(mobileMenuBtn)
-            clickToggleAside(ipadMenuBtn)
-            clickToggleAside(closeBtn, false)
+  
+  <meta property="og:site_name" content="Xiaoyi&#39;s blog">
 
-            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
-            if (isMenuVisible) document.body.style.background = 'none'
+  
+  
 
-            function getEle(...args) {
-                return args.map(arg => document.querySelector(arg))
-            }
+  
+    <meta property="og:image" content>
+  
 
-            function clickToggleAside(btn, show = true) {
-                btn.addEventListener('click', function () {
-                    if (show) {
-                        aside.style.display = 'block'
-                    } else {
-                        aside.style.display = 'none'
-                    }
-                })
-            }
-        })
-    </script>
+  
+  <link href="/css/images/favicon.ico" rel="icon">
+  
+
+  <link rel="alternate" href="/atom.xml" title="Xiaoyi&#39;s blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+
+  <!-- baidu webmaster push -->
+  <script src="//push.zhanzhang.baidu.com/push.js"></script>
+
 </head>
+</html>
 
-<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
-    <div class="container">
-        <header class="header">
-    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
-        <h3 class="invisibile">
-            <a href="/" class="logo">
-                Xiaoyi&#39;s blog
-            </a>
-        </h3>
-        <button class="menu">menu</button>
-    </nav>
-
-    <button class="ipad-menu menu">menu</button>
-
-    <h1 class="title" id="main-title">
-        <a href="/" class="logo">
-            Xiaoyi&#39;s blog
-        </a>
-    </h1>
-    <h2 class="desc">
-        
-    </h2>
-
-    <div class="links">
-        <ul>
-            
-            <li>
-                <a href="https://github.com/FrontendSophie">
-                    Github
-                </a>
-            </li>
-            
-            <li>
-                <a href="https://www.linkedin.com/in/frontendsophie/">
-                    LinkedIn
-                </a>
-            </li>
-            
-        </ul>
-    </div>
-</header>
-        <main class="main">
-            
-<section class="posts">
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Xiaoyi&#39;s blog</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
     
-        <article class="post">
-            
-                    <h1 class="post-title">
-                        <a href="/2019/09/23/python编写简易爬虫/">
-                            python编写简易爬虫
-                        </a>
-                    </h1>
-
-                    <ul class="post-date">
-                        <li>
-                            September 23, 2019
-                        </li>
-                        <li>
-                            Xiaoyi Qing
-                        </li>
-                    </ul>
-                    
-                        <div class="post-cover">
-                            <img src="https://i.loli.net/2020/01/15/EW13N2wRf6n7SPc.jpg">
-                        </div>
-                    
-                    <div class="post-content ">
-                        
-                            <a href="/2019/09/23/python编写简易爬虫/" class="more-link">Continue reading</a>
-                    </div>
-        </article>
-        
-</section>
-
-        </main>
-        <aside class="aside">
-            <div class="close"></div>
-            <section class="aside-section">
-                
-    <h1>Categories</h1>
-
+      <li><a href="/">Home</a></li>
     
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title">2019</h2>
 
-            </section>
-            <section class="aside-section">
-                
-    <h1>Archives</h1>
 
-    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/">2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/">2019</a></li></ul>
+  <div class="archive">
+    
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2019-09-23T08:05:36.000Z"><a href="/2019/09/23/python编写简易爬虫/">2019-09-23</a></time>
+            
+              <h1 class="title"><a href="/2019/09/23/python编写简易爬虫/">python编写简易爬虫</a></h1>
+            
+          </header>
+        </div>
+      </article>
+    
+  </div>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">Recent Posts</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2020/02/04/Java基础（二）：基本语法/">Java基础（二）：基本语法</a>
+      </li>
+    
+      <li>
+        <a href="/2020/01/31/Java基础（一）：了解Java/">Java基础（一）：了解Java</a>
+      </li>
+    
+      <li>
+        <a href="/2019/09/23/python编写简易爬虫/">python编写简易爬虫</a>
+      </li>
+    
+  </ul>
+</div>
 
 
-            </section>
-            <section class="aside-section tag">
-                
-    <h1>Tags</h1>
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/python/">-python</a><small>1</small></li>
+  
+    <li><a href="/tags/Java/">Java</a><small>1</small></li>
+  
+  </ul>
+</div>
 
-    <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/">-python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/">Java</a></li></ul>
 
-            </section>
-        </aside>
-    </div>
+  
+<div class="widget tagcloud">
+  <h3 class="title">Tag Cloud</h3>
+  <div class="entry">
+    <a href="/tags/python/" style="font-size: 10px;">-python</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a>
+  </div>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  <p>
+  
+  &copy; 2020 Xiaoyi Qing
+  
+  All rights reserved.</p>
+  <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</div>
+<div class="clearfix"></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id='bg'></div>
 </body>
-
 </html>
