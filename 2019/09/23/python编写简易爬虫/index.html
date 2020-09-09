@@ -1,80 +1,26 @@
-<!DOCTYPE HTML>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  
-  <title>python编写简易爬虫 | Xiaoyi&#39;s blog</title>
-  <meta name="author" content="Xiaoyi Qing">
-
-  
-  <meta name="description" content="什么是爬虫？网络爬虫（web crawler），其实就是一种脚本，能够按照一定的规则自动的抓取万维网上的信息。
-爬虫的思路先输入一个网址，浏览器拿到网址后通过域名解析出IP后（http服务）发送给服务器一个请求；服务器会根据请求做相应处理后在返回给浏览器（响应）；浏览器收到响应后会对收到的内容解析、">
-  
-
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <meta property="og:title" content="python编写简易爬虫">
-  <meta property="og:site_name" content="Xiaoyi&#39;s blog">
-
-  
-  
-
-  
-    <meta property="og:image" content>
-  
-
-  
-  <link href="/css/images/favicon.ico" rel="icon">
-  
-
-  <link rel="alternate" href="/atom.xml" title="Xiaoyi&#39;s blog" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  
-
-
-  <!-- baidu webmaster push -->
-  <script src="//push.zhanzhang.baidu.com/push.js"></script>
-
-</head>
-</html>
-
-<body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">Xiaoyi&#39;s blog</a></h1>
-  <h2><a href="/"></a></h2>
-</div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div></header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2019-09-23T08:05:36.000Z"><a href="/2019/09/23/python编写简易爬虫/">2019-09-23</a></time>
-      
-      
-  
-    <h1 class="title">python编写简易爬虫</h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h2 id="什么是爬虫？"><a href="#什么是爬虫？" class="headerlink" title="什么是爬虫？"></a>什么是爬虫？</h2><p>网络爬虫（web crawler），其实就是一种脚本，能够按照一定的规则自动的抓取万维网上的信息。</p>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="Xiaoyi Qing"><meta name="copyright" content="Xiaoyi Qing"><meta name="generator" content="Hexo 5.1.1"><meta name="theme" content="hexo-theme-yun"><title>python编写简易爬虫 | Xiaoyi's blog</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="none" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.19/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_stqaphw3j4.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><link rel="shortcut icon" type="image/svg+xml" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"root":"/","title":"云游君的小站","version":"1.0.0","anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><meta name="description" content="什么是爬虫？网络爬虫（web crawler），其实就是一种脚本，能够按照一定的规则自动的抓取万维网上的信息。 爬虫的思路先输入一个网址，浏览器拿到网址后通过域名解析出IP后（http服务）发送给服务器一个请求；服务器会根据请求做相应处理后在返回给浏览器（响应）；浏览器收到响应后会对收到的内容解析、渲染，在展示给用户。而爬虫就是用程序模拟浏览器发送http请求，通过url进行一系列的信息数据等资源">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python编写简易爬虫">
+<meta property="og:url" content="http://yoursite.com/2019/09/23/python%E7%BC%96%E5%86%99%E7%AE%80%E6%98%93%E7%88%AC%E8%99%AB/index.html">
+<meta property="og:site_name" content="Xiaoyi&#39;s blog">
+<meta property="og:description" content="什么是爬虫？网络爬虫（web crawler），其实就是一种脚本，能够按照一定的规则自动的抓取万维网上的信息。 爬虫的思路先输入一个网址，浏览器拿到网址后通过域名解析出IP后（http服务）发送给服务器一个请求；服务器会根据请求做相应处理后在返回给浏览器（响应）；浏览器收到响应后会对收到的内容解析、渲染，在展示给用户。而爬虫就是用程序模拟浏览器发送http请求，通过url进行一系列的信息数据等资源">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2020/01/15/EW13N2wRf6n7SPc.jpg">
+<meta property="og:image" content="https://i.loli.net/2020/01/15/F3pDyA98XoV1tne.jpg">
+<meta property="article:published_time" content="2019-09-23T08:05:36.000Z">
+<meta property="article:modified_time" content="2020-01-15T04:55:22.654Z">
+<meta property="article:author" content="Xiaoyi Qing">
+<meta property="article:tag" content="-python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2020/01/15/EW13N2wRf6n7SPc.jpg"></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="Xiaoyi Qing"><img width="96" loading="lazy" src="/Yun.png" alt="Xiaoyi Qing"></a><div class="site-author-name"><a href="/about/">Xiaoyi Qing</a></div><a class="site-name" href="/about/site.html">Xiaoyi's blog</a><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">3</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="/atom.xml" title="RSS" target="_blank" style="color:orange"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-rss-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://shang.qq.com/wpa/qunwpa?idkey=c929e704022704d8cced9ec355d44a3fa7ad34aea12cef1de03d75d3d7d5b059" title="QQ 群" target="_blank" style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://github.com/YunYouJun" title="GitHub" target="_blank" style="color:#6e5494"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-github-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://weibo.com/jizhideyunyoujun" title="微博" target="_blank" style="color:#E6162D"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-weibo-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.douban.com/people/yunyoujun/" title="豆瓣" target="_blank" style="color:#007722"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-douban-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=247102977" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://www.zhihu.com/people/yunyoujun/" title="知乎" target="_blank" style="color:#0084FF"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-zhihu-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://space.bilibili.com/1579790" title="哔哩哔哩" target="_blank" style="color:#FF8EB3"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-bilibili-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://twitter.com/YunYouJun" title="Twitter" target="_blank" style="color:#1da1f2"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-twitter-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://t.me/elpsycn" title="Telegram Channel" target="_blank" style="color:#0088CC"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-telegram-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="mailto:me@yunyoujun.cn" title="E-Mail" target="_blank" style="color:#8E71C1"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-mail-line"></use></svg></a><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://travellings.now.sh/" title="Travelling" target="_blank" style="color:var(--hty-text-color)"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-send-plane-2-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/links/" title="我的小伙伴们" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a></div></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%88%AC%E8%99%AB%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">什么是爬虫？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E7%9A%84%E6%80%9D%E8%B7%AF"><span class="toc-number">2.</span> <span class="toc-text">爬虫的思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%AC%E8%99%AB%E6%B5%81%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">爬虫流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E7%88%AC%E8%99%AB"><span class="toc-number">4.</span> <span class="toc-text">开始爬虫</span></a></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/23/python%E7%BC%96%E5%86%99%E7%AE%80%E6%98%93%E7%88%AC%E8%99%AB/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Xiaoyi Qing"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="Xiaoyi's blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">python编写简易爬虫</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="Created: 2019-09-23 16:05:36" itemprop="dateCreated datePublished" datetime="2019-09-23T16:05:36+08:00">2019-09-23</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="Modified: 2020-01-15 12:55:22" itemprop="dateModified" datetime="2020-01-15T12:55:22+08:00">2020-01-15</time></div><div class="post-classify"><span class="post-tag"><a class="tag" href="/tags/python/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">-python</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><h2 id="什么是爬虫？"><a href="#什么是爬虫？" class="headerlink" title="什么是爬虫？"></a>什么是爬虫？</h2><p>网络爬虫（web crawler），其实就是一种脚本，能够按照一定的规则自动的抓取万维网上的信息。</p>
 <h2 id="爬虫的思路"><a href="#爬虫的思路" class="headerlink" title="爬虫的思路"></a>爬虫的思路</h2><p>先输入一个网址，浏览器拿到网址后通过域名解析出IP后（http服务）发送给服务器一个请求；服务器会根据请求做相应处理后在返回给浏览器（响应）；浏览器收到响应后会对收到的内容解析、渲染，在展示给用户。而爬虫就是用程序模拟浏览器发送http请求，通过url进行一系列的信息数据等资源的抓取。</p>
 <h2 id="爬虫流程"><a href="#爬虫流程" class="headerlink" title="爬虫流程"></a>爬虫流程</h2><blockquote>
 <p>目标数据  </p>
@@ -93,162 +39,48 @@
 <blockquote>
 <p>数据持久化  </p>
 </blockquote>
-<p> 清楚原理后开始爬虫！这次爬虫的目标是<a href="http://www.xbiqugew.com/" target="_blank" rel="noopener">笔趣阁</a>上的辰东的《圣墟》  </p>
+<p> 清楚原理后开始爬虫！这次爬虫的目标是<a target="_blank" rel="noopener" href="http://www.xbiqugew.com/">笔趣阁</a>上的辰东的《圣墟》  </p>
 <h2 id="开始爬虫"><a href="#开始爬虫" class="headerlink" title="开始爬虫"></a>开始爬虫</h2><blockquote>
 <p>首先导入爬虫所需要的库  </p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">import re</span><br></pre></td></tr></table></figure>
-
 <p>requests:爬虫需要请求http模块，可以方便进行数据爬取<br>re:re是正则表达式的库，可以更精确指定抓取数据的位置</p>
 <blockquote>
 <p>下载一个页面  </p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url = &apos;http://www.xbiqugew.com/book/18725/&apos;</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url &#x3D; &#39;http:&#x2F;&#x2F;www.xbiqugew.com&#x2F;book&#x2F;18725&#x2F;&#39;</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>模拟浏览器发送http请求  </p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">response = requests.get(url)</span><br><span class="line">response.encoding =&apos;gbk&apos;</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">response &#x3D; requests.get(url)</span><br><span class="line">response.encoding &#x3D;&#39;gbk&#39;</span><br></pre></td></tr></table></figure>
 <p>此处html的字符集我试了很多个种字符集都是乱码，最后找到一个诀窍，直接到html代码里找到头部(head)，一般前面几行就会写出这个html的字符集。这个html的字符集为gbk  </p>
-<p><img src="https://i.loli.net/2020/01/15/EW13N2wRf6n7SPc.jpg" alt="html中查看字符集"> </p>
+<p><img src="https://i.loli.net/2020/01/15/EW13N2wRf6n7SPc.jpg" alt="html中查看字符集" loading="lazy"> </p>
 <blockquote>
 <p>网页源码</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">html = response.text</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">html &#x3D; response.text</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>获取小说标题</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title = re.findall(r&apos;&lt;meta property=&quot;og:title&quot; content=&quot;(.*?)&quot;&gt;&apos;,html)</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title &#x3D; re.findall(r&#39;&lt;meta property&#x3D;&quot;og:title&quot; content&#x3D;&quot;(.*?)&quot;&gt;&#39;,html)</span><br></pre></td></tr></table></figure>
 <p>这里的小说标题就是用爬虫抓取出来的数据了。  </p>
 <p>  从html网页源码中找到需要抓取内容周围具有唯一性的代码段，将需要抓取的内容删除，使用(.*?)来代替，这里的括号里点星问就是需要抓取的内容。  </p>
 <blockquote>
 <p>获取每一章节的信息（章节，url）  </p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dl = re.findall(r&apos;&lt;dt&gt;《圣墟》正文&lt;/dt&gt;.*?&lt;/dl&gt;&apos;,html,re.S)[0]</span><br><span class="line">chapter_info_list = re.findall(r&apos;&lt;dd&gt;&lt;a href=&quot;(.*?)&quot;&gt;(.*?)&lt;/a&gt;&lt;/dd&gt;&apos;,dl)</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dl &#x3D; re.findall(r&#39;&lt;dt&gt;《圣墟》正文&lt;&#x2F;dt&gt;.*?&lt;&#x2F;dl&gt;&#39;,html,re.S)[0]</span><br><span class="line">chapter_info_list &#x3D; re.findall(r&#39;&lt;dd&gt;&lt;a href&#x3D;&quot;(.*?)&quot;&gt;(.*?)&lt;&#x2F;a&gt;&lt;&#x2F;dd&gt;&#39;,dl)</span><br></pre></td></tr></table></figure>
 <p>和上面获取小说标题信息一样，知识抓取内容更多更杂乱一点，不过都是通过re.findall()和(.*?)来抓取内容。  </p>
 <blockquote>
 <p>循环每一个章节，分别去下载  </p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">for chapter_info in chapter_info_list:</span><br><span class="line">    chapter_url,chapter_title = chapter_info</span><br><span class="line">    chapter_url = &quot;http://www.xbiqugew.com&quot; + chapter_url</span><br><span class="line">    </span><br><span class="line">    chapter_response = requests.get(chapter_url)</span><br><span class="line">    chapter_response.encoding=&apos;gbk&apos;</span><br><span class="line">    chapter_html=chapter_response.text</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">for chapter_info in chapter_info_list:</span><br><span class="line">    chapter_url,chapter_title &#x3D; chapter_info</span><br><span class="line">    chapter_url &#x3D; &quot;http:&#x2F;&#x2F;www.xbiqugew.com&quot; + chapter_url</span><br><span class="line">    </span><br><span class="line">    chapter_response &#x3D; requests.get(chapter_url)</span><br><span class="line">    chapter_response.encoding&#x3D;&#39;gbk&#39;</span><br><span class="line">    chapter_html&#x3D;chapter_response.text</span><br></pre></td></tr></table></figure>
 <p>通过for循环下载每一章小说的内容，这里的代码也只是重复之前的过程：获取网页、抓取网页中需要的内容，这里再用一个循环循环每一章节，将每章小说抓取下来。</p>
 <blockquote>
 <p>清洗数据  </p>
 </blockquote>
 <p>这里抓取出来的小说还有很多杂乱的、我们不想要的数据在里面，比如：很多空格，html中的空格代码 &amp;nbsp 和换行标签 &lt; /br&gt;等等。可以使用replace置换。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">chapter_content = chapter_content.replace(&apos; &apos;,&apos;&apos;)</span><br><span class="line">chapter_content = chapter_content.replace(&apos;&amp;nbsp&apos;,&apos;&apos;)</span><br><span class="line">chapter_content = chapter_content.replace(&apos;&lt;br/&gt;&apos;,&apos;&apos;)</span><br><span class="line">``/</span><br><span class="line">这里我也出了一个问题：我在之前的chpter_content是list格式，但是list无法使用replace，最开始用join还是报错，最后直接使用str()转换成字符串。  </span><br><span class="line"></span><br><span class="line">&gt;数据持久化储存</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">chapter_content &#x3D; chapter_content.replace(&#39; &#39;,&#39;&#39;)</span><br><span class="line">chapter_content &#x3D; chapter_content.replace(&#39;&amp;nbsp&#39;,&#39;&#39;)</span><br><span class="line">chapter_content &#x3D; chapter_content.replace(&#39;&lt;br&#x2F;&gt;&#39;,&#39;&#39;)</span><br><span class="line">&#96;&#96;&#x2F;</span><br><span class="line">这里我也出了一个问题：我在之前的chpter_content是list格式，但是list无法使用replace，最开始用join还是报错，最后直接使用str()转换成字符串。  </span><br><span class="line"></span><br><span class="line">&gt;数据持久化储存</span><br></pre></td></tr></table></figure>
 <p>fp = open(‘%s.txt’%title,’w’,encoding=’utf-8’<br>fp.write(chapter_title)<br>fp.write(chapter_content)<br>fp.write(‘\n’)<br>```<br>将抓取的小说存储到txt文档中</p>
 <p>最后给大家看看我抓的小说  </p>
-<p><img src="https://i.loli.net/2020/01/15/F3pDyA98XoV1tne.jpg" alt="乱七八槽的小说"><br>当然我这个也还需要改进。源码今天看已经找不到了，后面再补上。</p>
-
-      
-    </div>
-    
-    <footer>
-        <div class="alignright">
-          
-          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
-        </div>
-        
-        
-  
-  <div class="tags">
-    <a href="/tags/python/">-python</a>
-  </div>
-
-        <!-- partial('post/share') -->
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-</div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
-    <input type="hidden" name="q" value="site:yoursite.com">
-  </form>
-</div>
-
-  
-
-  
-<div class="widget tag">
-  <h3 class="title">Recent Posts</h3>
-  <ul class="entry">
-    
-      <li>
-        <a href="/2020/02/04/Java基础（二）：基本语法/">Java基础（二）：基本语法</a>
-      </li>
-    
-      <li>
-        <a href="/2020/01/31/Java基础（一）：了解Java/">Java基础（一）：了解Java</a>
-      </li>
-    
-      <li>
-        <a href="/2019/09/23/python编写简易爬虫/">python编写简易爬虫</a>
-      </li>
-    
-  </ul>
-</div>
-
-
-  
-<div class="widget tag">
-  <h3 class="title">Tags</h3>
-  <ul class="entry">
-  
-    <li><a href="/tags/python/">-python</a><small>1</small></li>
-  
-    <li><a href="/tags/Java/">Java</a><small>1</small></li>
-  
-  </ul>
-</div>
-
-
-  
-<div class="widget tagcloud">
-  <h3 class="title">Tag Cloud</h3>
-  <div class="entry">
-    <a href="/tags/python/" style="font-size: 10px;">-python</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a>
-  </div>
-</div>
-
-</aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  <p>
-  
-  &copy; 2020 Xiaoyi Qing
-  
-  All rights reserved.</p>
-  <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
-</div>
-<div class="clearfix"></div>
-
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></footer>
-  <script src="/js/jquery.imagesloaded.min.js"></script>
-<script src="/js/gallery.js"></script>
-
-
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
-
-
-<div id='bg'></div>
-</body>
-</html>
+<p><img src="https://i.loli.net/2020/01/15/F3pDyA98XoV1tne.jpg" alt="乱七八槽的小说" loading="lazy"><br>当然我这个也还需要改进。源码今天看已经找不到了，后面再补上。</p>
+</div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="Donate" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">I'm so cute. Please give me money.</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/alipay-qrcode.jpg" alt="支付宝" title="支付宝"></a><div><span style="color:#00A3EE"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-alipay-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/qqpay-qrcode.png" alt="QQ 支付" title="QQ 支付"></a><div><span style="color:#12B7F5"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-qq-line"></use></svg></span></div></div><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/donate/wechatpay-qrcode.jpg" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author: </strong>Xiaoyi Qing</li><li class="post-copyright-link"><strong>Post link: </strong><a href="http://yoursite.com/2019/09/23/python%E7%BC%96%E5%86%99%E7%AE%80%E6%98%93%E7%88%AC%E8%99%AB/" title="python编写简易爬虫">http://yoursite.com/2019/09/23/python%E7%BC%96%E5%86%99%E7%AE%80%E6%98%93%E7%88%AC%E8%99%AB/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> unless stating additionally.</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2020/01/31/Java%E5%9F%BA%E7%A1%80%EF%BC%88%E4%B8%80%EF%BC%89%EF%BC%9A%E4%BA%86%E8%A7%A3Java/" rel="prev" title="Java基础（一）：了解Java"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">Java基础（一）：了解Java</span></a></div><div class="post-nav-item"></div></div></div><div id="comment"><div class="comment-tooltip text-center"><span>点击按钮跳转 GitHub Issues 评论。</span><br><span>若没有本文 Issue，您可以使用 Comment 模版新建。</span><br><a class="hty-button hty-button--raised" id="github-issues" target="_blank" rel="noopener" href="https://github.com/YunYouJun/yunyoujun.github.io/issues?q=is:issue+python编写简易爬虫">GitHub Issues</a></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2020 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> Xiaoyi Qing</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v5.1.1</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.0.0</span></div></footer><a class="hty-icon-button" id="goUp" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a></div><script defer src="/js/utils.js"></script><script defer src="/js/hexo-theme-yun.js"></script></body></html>
