@@ -18,7 +18,7 @@
   const wordcloud_canvas = document.getElementById('wordcloud-canvas')
   wordcloud_canvas.width = document.querySelector('#page').clientWidth - 16
   wordcloud_canvas.height = 350
-  let wordcloud_config = {"list":[["Express.js",1.1,"/tags/Express-js/"],["Java",1.1,"/tags/Java/"],["MongoDB",1.1,"/tags/MongoDB/"],["ajax",1.1,"/tags/ajax/"],["Node.js",1.1,"/tags/Node-js/"],["npm",1.1,"/tags/npm/"],["其它",1.1,"/tags/其它/"],["Vue",1.1,"/tags/Vue/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
+  let wordcloud_config = {"list":[["Express.js",1.1,"/tags/Express-js/"],["Java",1.1,"/tags/Java/"],["MongoDB",1.1,"/tags/MongoDB/"],["Node.js",1.1,"/tags/Node-js/"],["ajax",1.1,"/tags/ajax/"],["npm",1.1,"/tags/npm/"],["其它",1.1,"/tags/其它/"],["Vue",1.1,"/tags/Vue/"]],"fontFamily":"'PingFang SC', 'Microsoft YaHei', Roboto, Arial, sans-serif","fontWeight":400,"gridSize":10,"weightFactor":13,"backgroundColor":"transparent","color":"random-dark"}
   wordcloud_config.hover = function(item, dimension){
     if (!dimension) {
       wordbox.hidden = true
